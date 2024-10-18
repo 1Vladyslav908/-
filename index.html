@@ -1,106 +1,116 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <title>про мене</title>
-  <link rel="icon" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIADgAJQMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAABgUHAQMECAL/xAAuEAABAwMCBAUDBQEAAAAAAAABAgMEAAURBiESEzFBIlFhcZEUMoEjcqHB4Qf/xAAYAQEBAQEBAAAAAAAAAAAAAAADBAIBAP/EAB4RAAMAAgIDAQAAAAAAAAAAAAABAgMREkEEEyEx/9oADAMBAAIRAxEAPwDn/wCi6zjvabEC2vSg/LPA6lwAANjdWNgd8AexNVOlSeilpB9TVi6x06xD1vDjvqdegGIHQp7B4jxEEHAHfHzT/ZLfDaYDKIzGAN2w2NgPTFTPJUJKl9KYwrK209IoAjb09KxxDFX3edFafuKCXIDcd1W/NjDlqz+Nj+aqfV2jpVgUp5CjIhZ2eAwU/uH91qM009HMnjXC3+oVljJ8JxRWM461ilJz0Jri3pusqKyjhU+20pSUrGUjJGDjv9p+KitLsS7XdOEO81t88AbXnKep2NME55Kbyy4ojBZUDnsAf9rW2FOfVXRaMIQgoYwfk1N5Datov8WJqFXZrvmoVxEqEeG6+hs/rOoHhRuO5270tyb+3c2+WWVFtxG5KPCoeXUjvTLEtv1MNDjTxHFnO/3A9aWb9FXb5rUOHwkyVlTqjuc5AH8n+KFaa12NaqXvfwrZOm7ncZUs2mA6/HaeKAUlIx5Dc1irS5rGmQLfAUqQtO8hzjwCvvRTLLeviJ/Th7ZHcVyVdmV3k82OpJbGcAAnp70yRxKg2puKFL5LaySc5GDvsMH46Ut3a+zJ3ITGiZ+ldCgQndZOAMgjrvUzB1hCLIEpDjDpGPtwcj0NYycuxMFwTLNxiRoAEcLQhs4KScnPv70gX+e7NvoYtisPhQU48nfhPQD8eVdt3VO1EtLdoYWxEB4nJTvhHuOnbvTBpfTrFvWiM3wrcS2VvPdStR9fYijS4rkzVVzeirl3W4JcWHFeMKPFlAznvmimrV2m1tXZa4ydnNz70V72s364GfTFvD75krQHEKUSojzCuJPwakb1BhAgy4iJTgeK2lIZBUgHcpOOozntRRW6emHjlOEZjxZ64uIDbbLYB/TKSjOSDgBQOOnU+Z2FdESRKgRkJmw22FcWXHlPA5z2B6miijp7RpSkz4uCGpq0OtlKtuo3oooohtn/2Q==" type="бо синн">
-  <meta charset="UTF=8"/>
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Персональна сторінка Владислава</title>
+    <!-- Підключаємо Google Fonts для більш сучасного шрифта -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        /* Темна тема з новим шрифтом */
         body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-            color: #333;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1e1e1e;
+            color: #ecf0f1;
+            margin: 0;
+            padding: 0;
         }
-        header {
-            background-color: #acc4f3;
-            color: rgb(223, 213, 213);
-            text-align: left;
-            padding: 0px;
+
+        h2, h3 {
+            color: #f39c12;
+            border-bottom: 2px solid #e67e22;
+            padding-bottom: 10px;
+            margin-top: 40px;
         }
-        .container {
-            margin: auto;
-            padding: 20px;
+
+        h3 {
+            margin-top: 20px;
         }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color: #4163a8;
+
+        ul, ol {
+            margin: 10px 0;
+            padding-left: 20px;
         }
-        p {
-            line-height: 1.4;
+
+        ul {
+            list-style-type: square;
         }
-        .special-symbol {
-            font-size: 1.2em;
+
+        .contact-info ul {
+            list-style-type: none;
+            padding-left: 0;
         }
-        footer {
-            font-family: 'Courier New', Courier, monospace;
-            text-align: center;
+
+        .contact-info li {
+            background: #34495e;
             padding: 10px;
-            background-color: #9fbffd;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+
+        a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .social-media a {
+            display: inline-block;
+            background: #e67e22;
             color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        /* Зображення шапки */
+        .header-image {
+            background-image: url('https://18000.com.ua/wp-content/uploads/2022/01/177225530_3817019331700225_5481972302219433949_n.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #bdc3c7;
+            margin: 40px 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1><sup>Про мене</sup> <sub><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNrNP85CVbtYSmk-YbCIJ8brP3xh6huoYm9w&s" alt="bo sinn", width="110" height="160"></sub></h1>
-    </header>
-    <div class="line"></div>
 
-    <div class="line"></div>
-    <class="container">
-         <marquee> <h2>Привіт!</h2></marquee>
-
-        <p>Мене звати Ян Дево і я родом з Канади.Я відомий актор який отримав багато премій за свої ролі
-
-                <p>На данний момент я проживаю у Чехії, зустрічаюся з фанатами, працюю.</p>
-
-                <p>у мене дуже важка робота, але я її люблю, я люблю грати злодіїв та "поганих хлопців", такий характер</p>
-                
-        </p>
+    <!-- Зображення шапки -->
+    <div class="header-image">
+        Персональна сторінка Владислава
+    </div>
 
 
-        <h2>Примітки:</h2>
-        <h3>Мої контакти:</h3>
-        <ul>
-            <li>Номер 1 : 0971942913</li>
-            <li>Номер 2 : 88005553535</li>
-            </ul>
-        <h3>Соціальні мережі:</h3>
-        <p>https://www.youtube.com/watch?v=-8wN7XyxYVA</p>
+    <hr>
 
-        <h2>правила мого життя:</h2>
-        <ol> 
-            <li>зло тільки у фільмах</li> 
-            <li>пити або у чехії або на свята</li> 
-            <li>фізкультура, фізкультура, фізкультура</li> 
-            <li>лягати спати в 10 вечора</li> 
-         </ol> 
-         
-         <h2>Послуги:</h2>
-         <ul type =square >  
-            <li>гра у вашому фільмі</li>
-            <li>консультація</li>
-            <li>дарунок квітів</li>
-            <li>участь в ваших корпоративах,весіллях,тощо</li>
-            <li>каскадерські трюки на скейтборді</li>
-         </ul>
-         <h2>Мої плани на життя:</h2>
-         <ol type="a">
-            <li>найти багатеньку жінку і жити в шоколаді</li>
-            <li>піти на фронт</li>
-            <li>натапати в хамяка і розбагатіти</li>
-         </ol>
-         <hr style="border: 1px solid black; width: 100%; ">
-        <IMG src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ34KGfzLpDhhhoEx2FtIOIh_KSJRKUMYHC6A&s" , alt="умань" width="460" height="250">
-            <hr style="border: 1px solid black; width: 50%; margin: 20px auto;">
-
-            <IMG src="https://18000.com.ua/wp-content/uploads/2022/01/177225530_3817019331700225_5481972302219433949_n.jpg" width="460" height="250">
-                <hr style="border: 1px solid black; width: 100%; ">
-                <p>СТАРЫЙ БОООООГ</p>
-            <footer>
-        <marquee>2024 bo sinn actor усі права захищені</marquee>
-
+    <footer>
+        2024 Bo Sinn Actor – всі права захищені
     </footer>
+
 </body>
 </html>
